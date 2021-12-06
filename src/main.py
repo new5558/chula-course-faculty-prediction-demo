@@ -5,6 +5,7 @@ from thai2transformers.preprocess import process_transformers
 from tokenizers import Tokenizer, AddedToken
 import shap
 import requests
+import os
 
 model_path = './model'
 txt = ""
@@ -39,8 +40,11 @@ def download_faculty_map():
 
 @st.cache(allow_output_mutation=True, suppress_st_warning=True, max_entries=1, hash_funcs={Tokenizer: hash_tokenizer, AddedToken: hash_tokenizer})
 def load_pipeline():
-    model = AutoModelForSequenceClassification.from_pretrained("./model")
-    tokenizer = AutoTokenizer.from_pretrained("./model")
+    
+    is_development = bool(os.environ.get('DEVELOPMENT'))
+    model_path = "./model" if is_development else 'new5558/wangchan-course'
+    model = AutoModelForSequenceClassification.from_pretrained(model_path)
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
 
     pipeline = TextClassificationPipeline(model = model, tokenizer = tokenizer)
 

@@ -11,3 +11,5 @@ services:
       - ./src:/work:cached
       - ./model:/work/model:cached
     container_name: streamlit-container
+    environment:
+      - DEVELOPMENT=True
