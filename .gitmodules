@@ -1,0 +1,3 @@
+[submodule "model"]
+	path = model
+	url = https://huggingface.co/new5558/wangchan-course
