@@ -1,6 +1,7 @@
 # chula-course-faculty-prediction-demo
 
 ## [Online Demo](https://share.streamlit.io/new5558/chula-course-faculty-prediction-demo/src/main.py)
+![image](https://user-images.githubusercontent.com/12471844/144892811-52887bcb-3c1f-4bc7-bb40-5c8081cb2cc1.png)
 
 ## Ideas
 We want to predict faculty in Chulalongkorn university based on courses Thai description. The model can be used to 
