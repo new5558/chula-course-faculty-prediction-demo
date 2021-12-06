@@ -4,7 +4,7 @@
 ![image](https://user-images.githubusercontent.com/12471844/144892811-52887bcb-3c1f-4bc7-bb40-5c8081cb2cc1.png)
 
 ## Ideas
-We want to predict faculty in Chulalongkorn university based on courses Thai description. The model can be used to 
+We want to predict faculty in Chulalongkorn university based on courses Thai description. We may use this model to extract features from course descrition that may be developed further into course Recommender system. 
 
 Features:
 - Interactive web demo by Streamlit
@@ -24,4 +24,4 @@ Run on docker compose:
 `docker-compose -f docker-compose.dev.yml up streamlit --build`
 
 ## Heroku deployment
-Not working on free version becuase not of memory error
+Not working on free version of Heroku becuase not of memory error
