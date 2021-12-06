@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  jupyter:
+    build:
+      context: .
+    ports:
+      - 8501:8501
+    working_dir: /work
+    volumes:
+      - ./src:/work:cached
+      - ./model:/work/model:cached
+    container_name: streamlit-container
