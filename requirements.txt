@@ -4,4 +4,4 @@ torch==1.4
 transformers==4.12.5
 emoji==1.6.1
 pythainlp==2.3.2
-shap
+shap==0.40.0
