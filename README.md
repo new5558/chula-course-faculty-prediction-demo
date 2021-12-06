@@ -22,3 +22,6 @@ Features:
 ## Development
 Run on docker compose:    
 `docker-compose -f docker-compose.dev.yml up streamlit --build`
+
+## Heroku deployment
+Not working on free version becuase not of memory error
