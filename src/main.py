@@ -90,8 +90,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# st.text(shap_values)
-
-# shap.text_plot(shap_values[0, :, int(enc.transform([['25']])[0][0])])
